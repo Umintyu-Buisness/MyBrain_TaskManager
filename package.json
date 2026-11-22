@@ -1,0 +1,33 @@
+{
+  "name": "task-manager",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "node tests/gantt.browser.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "dexie": "^4.2.1",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vis-data": "^8.0.3",
+    "vis-timeline": "^8.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.3",
+    "fake-indexeddb": "^6.2.2",
+    "playwright-core": "^1.56.0",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.5"
+  }
+}
